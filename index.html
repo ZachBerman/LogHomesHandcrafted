@@ -75,14 +75,7 @@
     
     <div id="promo" class="promo-section">
         
-        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
-            
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li class="active" data-slide-to="0" data-target="#hero-carousel"></li>
-        <li data-slide-to="1" data-target="#hero-carousel"></li>
-        <li data-slide-to="2" data-target="#hero-carousel"></li>
-      </ol>
+        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide">
       
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
@@ -277,7 +270,7 @@
             <div class="row">
                 <div class="footer-col business-hours-col col-sm-offset-2 col-md-4 col-sm-4 col-xs-12">
                     <h3 class="col-title">Business Hours</h3>
-                    <div class="intro">Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit. Aenean commodo ligula.</div>
+                    <div class="intro"><br></div>
                     <ul class="business-hours-list list-unstyled">
                         <li><strong>Monday - Friday:</strong> 8am - 6pm</li>
                         <li><strong>Saturday:</strong> 8am - 6pm</li>
@@ -319,7 +312,6 @@
                 
         </div><!--//bottombar--> 
     </footer><!--//footer-->
-    
 
     <!-- Main Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
@@ -333,6 +325,15 @@
     <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
     
     <script type="text/javascript" src="assets/js/main.js"></script> 
+
+    <script type='text/javascript'>
+    $(document).ready(function() {
+         $('.carousel').carousel({
+             interval: 5000,
+             cycle: true,
+         })
+    });    
+    </script>
     
     
 </body>

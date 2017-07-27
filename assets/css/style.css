@@ -541,36 +541,20 @@ h1.logo img {
 .promo-section {
   background: #343E49;
   position: relative;
+  background-image: url('../images/hero/landing.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero-carousel {
-  height: 520px;
+  height: 600px;
   color: #fff;
 }
 .hero-carousel .carousel-inner .item {
-  height: 520px;
+  height: 600px;
   background-position: center center;
-  padding-top: 90px;
-}
-.hero-carousel .carousel-inner .item-1 {
-  background-image: url('../images/hero/hero-1.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.hero-carousel .carousel-inner .item-2 {
-  background-image: url('../images/hero/hero-2.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.hero-carousel .carousel-inner .item-3 {
-  background-image: url('../images/hero/hero-3.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  padding-top: 150px;
 }
 .hero-carousel .carousel-inner .item-content-inner {
   max-width: 680px;
@@ -587,6 +571,15 @@ h1.logo img {
   .hero-carousel .carousel-inner .heading {
   font-size: 24px;
   }
+  .promo-section {
+  background: #343E49;
+  position: relative;
+  background-image: url('../images/hero/landing-mobile.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 }
 
 .hero-carousel .carousel-inner .intro {
