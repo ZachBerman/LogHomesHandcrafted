@@ -1372,3 +1372,21 @@ body {
 .colored {
   color: #fff;
 }
+
+#header-img {
+  background: url('../images/cabin-in-winter.jpg');
+  height:300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-box {
+  padding-top:120px;
+}
+.section-title.special {
+  color:#fff;
+  background: rgba(0, 0, 0, 0.53);
+  padding: 20px;
+  max-width: 300px;
+}
