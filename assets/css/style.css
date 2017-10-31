@@ -543,11 +543,11 @@ h1.logo img {
   position: relative;
 }
 .hero-carousel {
-  height: 700px;
+  height: 600px;
   color: #fff;
 }
 .hero-carousel .carousel-inner .item {
-  height: 700px;
+  height: 600px;
   background-position: center center;
   padding-top: 90px;
 }
@@ -1388,5 +1388,5 @@ body {
   color:#fff;
   background: rgba(0, 0, 0, 0.53);
   padding: 20px;
-  max-width: 300px;
+  max-width:;
 }
