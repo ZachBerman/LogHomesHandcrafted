@@ -195,19 +195,19 @@ textarea {
   margin-bottom: 0;
 }
 .carousel-indicators li {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
   border: none;
-  width: 10px;
-  height: 10px;
+  width: 22px;
+  height: 22px;
   margin: 0;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .carousel-indicators li.active {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 11px;
-  height: 11px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 22px;
+  height: 22px;
   margin: 0;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 .delayp1 {
   animation-delay: .1s;
@@ -541,24 +541,43 @@ h1.logo img {
 .promo-section {
   background: #343E49;
   position: relative;
-  background-image: url('../images/hero/landing.jpg');
+}
+.hero-carousel {
+  height: 700px;
+  color: #fff;
+}
+.hero-carousel .carousel-inner .item {
+  height: 700px;
+  background-position: center center;
+  padding-top: 90px;
+}
+.hero-carousel .carousel-inner .item-1 {
+  background-image: url('../images/handcrafted-in-montana.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.hero-carousel {
-  height: 600px;
-  color: #fff;
+.hero-carousel .carousel-inner .item-2 {
+  background-image: url('../images/living-room.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.hero-carousel .carousel-inner .item {
-  height: 600px;
-  background-position: center center;
-  padding-top: 150px;
+.hero-carousel .carousel-inner .item-3 {
+  background-image: url('../images/log-home-in-montana.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero-carousel .carousel-inner .item-content-inner {
   max-width: 680px;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.53);
+  margin-top: 100px;
+  padding: 30px;
 }
 .hero-carousel .carousel-inner .heading {
   font-size: 32px;
@@ -567,26 +586,28 @@ h1.logo img {
   margin-top: 0;
   margin-bottom: 15px;
 }
-@media (max-width: 767px) {
-  .hero-carousel .carousel-inner .heading {
-  font-size: 24px;
-  }
-  .promo-section {
-  background: #343E49;
-  position: relative;
-  background-image: url('../images/hero/landing-mobile.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-}
-
 .hero-carousel .carousel-inner .intro {
   font-size: 18px;
   margin-bottom: 30px;
 }
+.carousel-control.left {
+    /* background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    /*background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);*/
+    /* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+    /* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
+    /* background-repeat: repeat-x; */
 /* Hack - http://stackoverflow.com/questions/33494764/owl-carousel-2-resize-window-bug */
+}
+.carousel-control.right {
+    /* background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    /*background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);*/
+    /* background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001))); */
+    /* background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%); */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);*/
+    /* background-repeat: repeat-x; */
+/* Hack - http://stackoverflow.com/questions/33494764/owl-carousel-2-resize-window-bug */
+}
 .owl-carousel .owl-item img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -729,12 +750,21 @@ h1.logo img {
 }
 /* ======= Callout Section ======= */
 .callout-section {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background: #f5f5f5;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url('../images/cozy-log-cabin.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .callout-section .section-title {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  color:#fff;
+}
+.callout-desc {
+  color:#fff;
+  font-weight:700;
+  margin-bottom:20px;
 }
 .callout-btn {
   margin-top: 15px;

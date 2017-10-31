@@ -73,52 +73,58 @@
         </div><!--//branding-->
     </header><!--//header-->
     
-    <div id="promo" class="promo-section">
+<div id="promo" class="promo-section">
         
-        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide">
-      
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-          
-        <div class="item item-1 active">
-          <div class="item-content container text-center">
-              <div class="item-content-inner">
-                    
-                    <h2 class="heading">Welcome to LogHomesHandcrafted</h2>
-                    <p class="intro">formerly Hummel Log Homes</p>
-                    <a class="btn btn-primary btn-cta" href="contact.html">Contact us for a free consultation</a>
-                    
-              </div><!--//item-content-inner-->
-          </div><!--//item-content-->
-        </div><!--//item-->
-        
-        <div class="item item-2">
-          <div class="item-content container text-center">
-            <div class="item-content-inner">
-                    
-                    <h2 class="heading">Beautiful Log Homes designed to fit your needs</h2>
-                    <p class="intro">Sustainably harvested &amp; crafted</p>
-                    <a class="btn btn-primary btn-cta" href="gallery.html">View our Photo Gallery</a>
-                    
-              </div><!--//item-content-inner-->
-          </div>
-        </div><!--//item-->
-        
-        <div class="item item-3">
-          <div class="item-content container text-center">
-            <div class="item-content-inner">
-                    
-                    <h2 class="heading">Our homes last for generations</h2>
-                    <p class="intro">See why LogHomesHandcrafted is the best in the business</p>
-                    <a class="btn btn-primary btn-cta scrollto" href="#why" target="_blank">Why choose us?</a>
-                    
-              </div><!--//item-content-inner-->
-          </div>
-        </div><!--//item-->
-        
-      </div><!--//carousel-inner-->
-
-    </div><!--//carousel-->
+        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-ride="carousel">
+            
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#hero-carousel"></li>
+                <li data-slide-to="1" data-target="#hero-carousel"></li>
+                <li data-slide-to="2" data-target="#hero-carousel"></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                
+                <div class="item item-1 active">
+                    <div class="item-content container text-center">
+                        <div class="item-content-inner">
+                            
+                            <h2 class="headerfont heading">Welcome to LogHomesHandcrafted</h2>
+                            <p class="intro">Formerly Hummel Log Homes</p>
+                            <a class="btn btn-primary btn-cta scrollto" href="#services" target="_blank">Learn More</a>
+                            
+                        </div><!--//item-content-inner-->
+                    </div><!--//item-content-->
+                </div><!--//item-->
+                
+                <div class="item item-2">
+                    <div class="item-content container text-center">
+                        <div class="item-content-inner">
+                            
+                            <h2 class="heading headerfont">Beautiful Log Homes</h2>
+                            <p class="intro">Sustainably Harvested &amp; Handcrafted</p>
+                            <a class="btn btn-primary btn-cta" href="gallery.html">View Our Gallery</a>
+                            
+                        </div><!--//item-content-inner-->
+                    </div>
+                </div><!--//item-->
+                
+                <div class="item item-3">
+                    <div class="item-content container text-center">
+                        <div class="item-content-inner">
+                            
+                            <h2 class="heading headerfont">Our Homes Last for Generations</h2>
+                            <p class="intro">See Why Log Homes Handcrafted is the best in the business</p>
+                            <a class="btn btn-primary btn-cta" href="contact.html">Get your FREE quote</a>
+                            
+                        </div><!--//item-content-inner-->
+                    </div>
+                </div><!--//item-->
+            </div><!--//carousel-inner-->
+            <!-- Controls -->
+        </div><!--//carousel-->
     </div><!--//promo-section-->
     
     <section id="services" class="section services-section">
@@ -156,11 +162,13 @@
     </section><!--//why-section-->
     
     <section class="callout-section section text-center">
+    <div class="callout-overlay">
         <div class="callout-container container">
             <h2 class="section-title">Your dream is just an email away.</h2>
             <div class="callout-desc">Let us build your perfect log home</div>
             <a class="callout-btn btn btn-cta btn-primary" href="contact.html">Contact Us</a>
-        </div><!--//container-->      
+        </div><!--//container-->    
+      </div>  
     </section><!--//callout-block-->
     
     <section id="faqs" class="section faq-section">
@@ -323,18 +331,8 @@
     <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>   
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
     <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
-    
-    <script type="text/javascript" src="assets/js/main.js"></script> 
-
-    <script type='text/javascript'>
-    $(document).ready(function() {
-         $('.carousel').carousel({
-             interval: 5000,
-             cycle: true,
-         })
-    });    
-    </script>
-    
+    <script type="text/javascript" src="assets/js/main.js"></script>
+   
     
 </body>
 </html> 
