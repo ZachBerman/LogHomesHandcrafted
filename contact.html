@@ -10,7 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">    
-    <link rel="shortcut icon" href="favicon.ico">  
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />  
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
     <!-- Global CSS -->
@@ -99,8 +118,7 @@
             <span class="info"><a href="mailto:LogHomes@blackfoot.net">LogHomes@blackfoot.net</a></span>
           </li>    
         </ul>
-        <form id="contact-form" class="contact-form form" method="post" action="mailer.php">
-          <div id="form-messages" class="text-center"></div> 
+        <form id="contact-form" class="contact-form form" method="POST" action="https://www.enformed.io/168hpzdc"> 
           <div class="row text-left">
             <div class="name-group col-sm-6 col-xs-12 form-group">
               <div class="form-group-inner">
@@ -130,8 +148,16 @@
               <div class="form-group-inner">
                 <label for="cmessage">Your project &amp; additional info</label>
                   <textarea class="form-control" id="cmessage" name="message" rows="6" placeholder="Enter your project info here..."  required></textarea>
+                  <div class="form-success alert alert-success" role="alert" style="display:none;"></div>
+                  <div class="form-failure alert alert-danger" role="alert" style="display:none;"></div>
               </div>
-            </div><!--//message-group-->
+            </div>
+            <!-- CONFIG -->
+                <input type="hidden" name="*subject" value="Website Form Submission" />
+                <input type="hidden" name="*honeypot" />
+                <input type="hidden" name="*reply" value="email" />
+                <!-- <input type="hidden" name="*default_email" value="" /> -->
+            <!--//message-group-->
             <div class="col-xs-12 form-group">
               <button type="submit" class="btn btn-block btn-primary btn-cta">Submit</button>
             </div> 
@@ -194,13 +220,35 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
     <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
+    <!-- <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script>  -->
     <script type="text/javascript" src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
     <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>   
     <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="assets/js/ajax-form.js"></script> 
+    <!-- <script type="text/javascript" src="assets/js/ajax-form.js"></script>  -->
     
     <script type="text/javascript" src="assets/js/main.js"></script> 
-    
+    <script>
+  $(document).ready(function(){
+    $("#contact-form").submit(function(event){
+      event.preventDefault();
+      $.ajax({
+        url: "https://www.enformed.io/168hpzdc",
+        method: "post",
+        dataType: "json",
+        accepts: "application/json",
+        data: $("#contact-form").serialize(),
+        success: function(){
+          $( ".submit" ).hide();
+          $(".form-success").text("Thanks, we'll get back to you shortly!").fadeIn();
+          // Show a success message here...
+        },
+        error: function(){
+          $(".form-failure").text("Something went wrong, please try again.").fadeIn();
+          // Show an error message here...
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html> 

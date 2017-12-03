@@ -100,6 +100,7 @@ a.btn-secondary:focus,
   height: 45px;
   border-color: #ccc;
   font-size: 16px;
+  overflow:hidden;
 }
 .form-control::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -1389,4 +1390,15 @@ body {
   background: rgba(0, 0, 0, 0.53);
   padding: 20px;
   max-width: 300px;
+}
+.form-success {
+  margin-top: 30px;
+  background-color: #D0C4AB;
+  border-color: #d6e9c6;
+  color: #000;
+  text-align: center;
+}
+.form-failure {
+  margin-top: 30px;
+  text-align: center;
 }
